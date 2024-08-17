@@ -14,3 +14,13 @@ echo "Running qwirkle test"
 ./tests/qwirkle/test &&
 echo "Running line-validation test"
 ./tests/line-validation/test;
+echo "Running multiplayer test"
+./tests/multiplayer/test;
+echo "Running AI test"
+./tests/ai/test;
+echo "Running colour test"
+./tests/colour/test;
+echo "Running board-resize test"
+./tests/board-size/test;
+echo "Running starting-hand test"
+./tests/starting-hand/test;

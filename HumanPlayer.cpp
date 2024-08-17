@@ -95,7 +95,7 @@ void HumanPlayer::makeMove(GameBoard* gameBoard, TileBag* tileBag, std::vector<P
                             int score = Rules::calculateScore(gameBoard, row, col);
                             setScore(getScore() + score);
 
-                            if (score > 12) {
+                            if (score >= 12) {
                                 std::cout << "QWIRKLE!!!" << std::endl;
                                 std::cout << std::endl;
                             }

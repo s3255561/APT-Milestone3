@@ -16,7 +16,7 @@ enum Colour
 class ColourUtils 
 {
     public:
-        // ANSI color codes for different colours
+        // ANSI colour codes for different colours
         static const std::string RED_COLOUR;
         static const std::string ORANGE_COLOUR;
         static const std::string YELLOW_COLOUR;
@@ -26,7 +26,7 @@ class ColourUtils
         static const std::string RESET_COLOUR;
 
         // Utility method to get the colour code based on the colour character
-        static std::string getAnsiColor(Colour colour);
+        static std::string getAnsiColour(Colour colour);
 
         // Utility method to convert a char to a Colour enum
         static Colour charToColour(char colourChar);

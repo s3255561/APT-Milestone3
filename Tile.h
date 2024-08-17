@@ -26,16 +26,16 @@ public:
     // Inequality operator for Tile comparison
     bool operator!=(const Tile& other) const;
 
-    // Function to check if the tile has a match by color or shape
+    // Function to check if the tile has a match by colour or shape
     std::string matchType(const Tile& other) const;
 
-    // Output the Tile with ANSI color codes
+    // Output the Tile with ANSI colour codes
     std::string toColouredString() const;
 
     // Function to overload the << operator
     friend std::ostream& operator<<(std::ostream& os, const Tile& tile);
 
-    std::string getAnsiColor() const;
+    std::string getAnsiColour() const;
 
 private:
     Colour colour;

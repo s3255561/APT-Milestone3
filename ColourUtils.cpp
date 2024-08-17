@@ -1,7 +1,7 @@
 #include "ColourUtils.h"
 #include <stdexcept>
 
-// ANSI color codes definitions (example)
+// ANSI colour codes definitions (example)
 const std::string ColourUtils::RED_COLOUR = "\033[31m";
 const std::string ColourUtils::ORANGE_COLOUR = "\033[33m";
 const std::string ColourUtils::YELLOW_COLOUR = "\033[33m";
@@ -11,7 +11,7 @@ const std::string ColourUtils::PURPLE_COLOUR = "\033[35m";
 const std::string ColourUtils::RESET_COLOUR = "\033[0m";
 
 // Utility methods implementations...
-std::string ColourUtils::getAnsiColor(Colour colour) 
+std::string ColourUtils::getAnsiColour(Colour colour) 
 {
     switch (colour) {
         case RED: return RED_COLOUR;

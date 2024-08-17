@@ -137,7 +137,7 @@ std::string GameBoard::displayBoard() const {
         for (int col = 0; col < cols; ++col) {
             if (board[row][col] != nullptr) {
                 if (colourDisplayEnabled) {
-                    output += board[row][col]->toColoredString() + "|";
+                    output += board[row][col]->toColouredString() + "|";
                 } else {
                     output += ColourUtils::colourToString(board[row][col]->getColour()) + std::to_string(board[row][col]->getShape()) + "|";
                 }
@@ -150,7 +150,6 @@ std::string GameBoard::displayBoard() const {
 
     return output;
 }
-
 
 // Check if the board is empty
 bool GameBoard::isEmpty() const {

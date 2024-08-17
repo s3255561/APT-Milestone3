@@ -1,0 +1,10 @@
+Usage: qwirkle [OPTIONS]
+Options:
+  --e2etest         Set seed to 0 for end-to-end tests
+  --colour          Enable colour display
+  --mp              Enable multiplayer mode
+  --ai              Enable AI players and multiplayer mode
+  --board-size=RxC  Set the board size (rows x columns)
+  --hand-size=N     Set the starting hand size to N
+  --all             Enable AI, colour display, and multiplayer mode
+  --help            Display this help message
