@@ -2,6 +2,7 @@
 #include "ColourUtils.h"
 #include <iostream>
 #include <string>
+#include "Config.h"
 
 // Constructor
 Tile::Tile(Colour colour, Shape shape) : colour(colour), shape(shape) {}
@@ -22,9 +23,20 @@ std::ostream& operator<<(std::ostream& os, const Tile& tile) {
     return os;
 }
 
-// Print the Tile as a string in the format of "ColourShape".
+// // Print the Tile as a string in the format of "ColourShape".
+// std::string Tile::print() const {
+//     return ColourUtils::getAnsiColour(colour) + ColourUtils::colourToString(colour) + std::to_string(shape) + ColourUtils::RESET_COLOUR;
+// }
+
 std::string Tile::print() const {
-    return ColourUtils::getAnsiColour(colour) + ColourUtils::colourToString(colour) + std::to_string(shape) + ColourUtils::RESET_COLOUR;
+    // Check if color display is enabled
+    if (Config::colourDisplay) {
+        // If true, return the colored string
+        return ColourUtils::getAnsiColour(colour) + ColourUtils::colourToString(colour) + std::to_string(shape) + ColourUtils::RESET_COLOUR;
+    } else {
+        // If false, return the plain text string
+        return ColourUtils::colourToString(colour) + std::to_string(shape);
+    }
 }
 
 // This function checks if two Tile objects are equal.
