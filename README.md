@@ -17,20 +17,20 @@ Run unit tests: `./qwirkle.exe test`
 Run all end-to-end tests: `./tests/run`
 
 Or run individually:<br>
-```bash
-./tests/credits/test       # Test credits menu
-./tests/qwirkle/test       # Test scoring a QWIRKLE
-./tests/load-game/test     # Test loading game
-./tests/new-game/test      # Test create new game
-./tests/save-game/test     # Test saving game
-./tests/game-end/test      # Test game ends when tiles run out
-./tests/line-validation/test  # Test tile placement is valid based on neighboring tiles
-./tests/ai/test            # Test AI opponent implementation
-./tests/board-size/test    # Test resizing of the gameboard
-./tests/colour/test        # Test tile colour output on gameboard
-./tests/help/test          # Test help command argument output
-./tests/multiplayer/test   # Test implementation of 2-4 player feature
-./tests/starting-hand/test # Test player starting tile number feature
+
+./tests/credits/test            # Test credits menu
+./tests/qwirkle/test            # Test scoring a QWIRKLE
+./tests/load-game/test          # Test loading game
+./tests/new-game/test           # Test create new game
+./tests/save-game/test          # Test saving game
+./tests/game-end/test           # Test game ends when tiles run out
+./tests/line-validation/test    # Test tile placement is valid based on neighboring tiles
+./tests/ai/test                 # Test AI opponent implementation
+./tests/board-size/test         # Test resizing of the gameboard
+./tests/colour/test             # Test tile colour output on gameboard
+./tests/help/test               # Test help command argument output
+./tests/multiplayer/test        # Test implementation of 2-4 player feature
+./tests/starting-hand/test      # Test player starting tile number feature
 
 
 ## Command-Line Options
