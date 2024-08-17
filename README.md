@@ -35,7 +35,7 @@ Or run individually:<br>
 
 Usage: ./qwirkle.exe [OPTIONS]<br>
 
-Options:
+Options:<br>
   --e2etest         Set seed to 0 for end-to-end tests<br>
   --colour          Enable colour display<br>
   --mp              Enable multiplayer mode<br>
