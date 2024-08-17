@@ -62,9 +62,6 @@ void Config::initialise(int argc, char** argv)
                     std::string rowPart = size.substr(0, xPos);
                     std::string colPart = size.substr(xPos + 1);
 
-                    // Debug output to check substrings
-                    std::cout << "Debug: rowPart = '" << rowPart << "', colPart = '" << colPart << "'" << std::endl;
-
                     // Convert to integers and handle potential errors
                     try {
                         boardRows = std::stoi(rowPart);

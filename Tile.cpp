@@ -23,11 +23,6 @@ std::ostream& operator<<(std::ostream& os, const Tile& tile) {
     return os;
 }
 
-// // Print the Tile as a string in the format of "ColourShape".
-// std::string Tile::print() const {
-//     return ColourUtils::getAnsiColour(colour) + ColourUtils::colourToString(colour) + std::to_string(shape) + ColourUtils::RESET_COLOUR;
-// }
-
 std::string Tile::print() const {
     // Check if color display is enabled
     if (Config::colourDisplay) {
